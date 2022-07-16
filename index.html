@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analisador de Números</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-blue">
+    <header>
+        <h1>Analisador de Números</h1>
+    </header>
+    <section>
+        <div class="result">
+            Número (entre 1 e 100): 
+            <input type="number" name="number" id="number">
+            <input type="button" value=" Adicionar " id="nBox" onclick="addNum()">
+        </div>
+        <div>
+            <p>
+                <select name="list" id="list" size="10" style="width:155px;">
+                <option id="option1">Adicione valores.</option>
+                </select>
+            </p>
+        </div>
+        <div>
+            <p>
+                <input type="button"value="Analisar" id="bEnd" onclick="calc()">
+            </p>
+        </div>
+        <div id="res" class="result"></div>
+    </section>
+    <footer>
+        <a href="https://azrmicael.github.io/links-page/">&copy; Micael Azevêdo</a>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
