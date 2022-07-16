@@ -16,7 +16,7 @@ function addNum() {
     var nN = Number(n);
     var list = window.document.querySelector('select#list');
     
-    if (n.length == 0 || nN == 0 || nN > 100) {
+    if (n.length == 0 || nN == 0 || nN > 100 || nN < 0) {
         window.alert('Valor inválido. Forneça um número entre 0 e 100.');
 
     } else if (values.indexOf(nN) != -1) {
