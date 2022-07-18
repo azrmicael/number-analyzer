@@ -88,3 +88,17 @@ function calc() {
         <p>A média dos valores digitados é de ${averageValues}.</p>`;
     }
 }
+
+var i = 1;
+
+function changeTheme() {
+    var element = document.body;
+    var themes = ["blue","dark-blue","pink","dark-pink"];
+    if (i < themes.length) {
+        element.className = themes[i];
+        i++;
+    } else if (i == themes.length) {
+        i = 0;
+        changeTheme()
+    }
+}
