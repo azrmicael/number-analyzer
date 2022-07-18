@@ -89,7 +89,7 @@ function calc() {
     }
 }
 
-var i = 1;
+var i = 2;
 
 function changeTheme() {
     var element = document.body;
