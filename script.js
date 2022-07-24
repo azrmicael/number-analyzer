@@ -1,6 +1,6 @@
 var values = [];
 
-addEventListener('keypress', kpEvent);
+addEventListener('keyup', kpEvent);
 function kpEvent(e) {
     if (e.code == 'Enter' || e.code == 'NumpadEnter') {
         addNum();
