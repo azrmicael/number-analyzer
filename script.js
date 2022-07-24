@@ -12,9 +12,11 @@ function addNum() {
     var n = window.document.querySelector('input#number').value;
     window.document.querySelector('input#number').value = '';
     window.document.querySelector('input#number').focus();
-    console.log(`input: ${n}`);
+    console.log(`input: ${n} e typeof: ${typeof(n)}`); // OK
     var nN = Number(n);
-    var list = window.document.querySelector('select#list');
+    console.log(`inputN: ${nN} e typeof: ${typeof(nN)}`); // OK
+    var ul = window.document.querySelector('ul#list'); // conferir
+    var lis = ul.getElementsByTagName('li');
     
     if (n.length == 0 || nN == 0 || nN > 100 || nN < 0) {
         window.alert('Valor inválido. Forneça um número entre 0 e 100.');
@@ -23,15 +25,16 @@ function addNum() {
         window.alert('Valor já encontrado na lista.');
 
     } else {
-        if (list[0].value == 'Adicione valores.') {
-            list.remove(0);
+        values.push(nN);
+        var item = window.document.createElement('li')
+        let newLi = ul.appendChild(item);
+        newLi.innerHTML = `Valor ${nN} adicionado.`;
+        if (lis.item(0).innerText == 'Adicione valores.') {
+            ul.removeChild(lis.item(0));
         }
 
-        values.push(nN);
-        let option = window.document.createElement('option');
-        option.innerHTML = `Valor ${nN} adicionado.`;
-        list.appendChild(option);
-        console.log(`values: ${values}`);
+        console.log(newLi.innerText);
+        console.log(`values: [${values}]`);
     } return values
 }
 

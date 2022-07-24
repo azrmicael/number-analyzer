@@ -1,6 +1,6 @@
 # Number Analyzer
 
-After providing a series of numbers from 1 to 100, it is possible to know how many numbers were registered, the lowest value informed, the highest value informed, the sum of all values and the average of the values informed. 
+After providing a series of numbers from 1 to 100, it is possible to know how many numbers were registered, the lowest value informed, the highest value informed, the sum of all values and the average of the values informed.
 
 The analysis of the numbers is done after pressing the "Analizar" button.
 
