@@ -9,3 +9,6 @@ Comments:
 * The numbers must be added one by one, in any order;
 * It is not possible to re-enter the same number;
 * It is not possible to add negative numbers.
+
+Access link:
+https://azrmicael.github.io/number-analyzer/
