@@ -12,10 +12,8 @@ function addNum() {
     var n = window.document.querySelector('input#number').value;
     window.document.querySelector('input#number').value = '';
     window.document.querySelector('input#number').focus();
-    console.log(`input: ${n} e typeof: ${typeof(n)}`); // OK
     var nN = Number(n);
-    console.log(`inputN: ${nN} e typeof: ${typeof(nN)}`); // OK
-    var ul = window.document.querySelector('ul#list'); // conferir
+    var ul = window.document.querySelector('ul#list');
     var lis = ul.getElementsByTagName('li');
     
     if (n.length == 0 || nN == 0 || nN > 100 || nN < 0) {
@@ -33,8 +31,6 @@ function addNum() {
             ul.removeChild(lis.item(0));
         }
 
-        console.log(newLi.innerText);
-        console.log(`values: [${values}]`);
     } return values
 }
 
