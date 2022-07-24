@@ -2,7 +2,7 @@ var values = [];
 
 addEventListener('keypress', kpEvent);
 function kpEvent(e) {
-    if (e.code == 'Enter' || e.code == 'NumpadEnter') {
+    if (e.code === 'Enter' || e.code === 'NumpadEnter' || e.keyCode === 13) {
         addNum();
     }
 }
